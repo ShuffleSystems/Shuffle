@@ -32,7 +32,7 @@ module.exports = __toCommonJS(src_exports);
 var import_jsx_runtime = require("react/jsx-runtime");
 function Header({ children }) {
   return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("header", {
-    className: "h-12 mb-4 flex items-center justify-center",
+    className: "h-12 mb-4 flex items-center justify-center bg-neutral-100",
     children,
   });
 }

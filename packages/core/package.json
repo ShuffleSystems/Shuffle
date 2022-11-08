@@ -22,13 +22,16 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.13.0",
     "@typescript-eslint/parser": "^5.0.0",
+    "autoprefixer": "^10.4.13",
     "eslint": "^8.27.0",
+    "eslint-config-custom": "workspace:*",
+    "postcss": "^8.4.18",
     "prettier": "2.7.1",
     "stylelint": "^14.14.1",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-standard": "^29.0.0",
-    "turbo": "^1.6.3",
+    "tailwindcss": "^3.2.2",
     "tsconfig": "workspace:*",
-    "eslint-config-custom": "workspace:*"
+    "turbo": "^1.6.3"
   }
 }

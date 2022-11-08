@@ -8,5 +8,6 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
     "turbo",
     "prettier",
+    "plugin:react/jsx-runtime",
   ],
 };

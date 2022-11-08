@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import "ui/styles.css";
 import { Header } from "ui";
 
 export default function RootLayout({
@@ -14,7 +15,7 @@ export default function RootLayout({
       */}
       <head />
       <body>
-        <Header />
+        <Header>Shuffle</Header>
         {children}
       </body>
     </html>

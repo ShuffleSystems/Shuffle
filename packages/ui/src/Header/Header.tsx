@@ -1,13 +1,11 @@
 import { ReactNode } from "react";
-import Image from "next/image";
 
 export interface HeaderProps {
   children?: ReactNode;
 }
 export function Header({ children }: HeaderProps) {
   return (
-    <header>
-      <Image src="/logo.png" width={80} height={80} alt="Logo" />
+    <header className="h-12 mb-4 flex items-center justify-center">
       {children}
     </header>
   );

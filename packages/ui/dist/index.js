@@ -1,7 +1,9 @@
 "use strict";
+var __create = Object.create;
 var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
 var __getOwnPropNames = Object.getOwnPropertyNames;
+var __getProtoOf = Object.getPrototypeOf;
 var __hasOwnProp = Object.prototype.hasOwnProperty;
 var __export = (target, all) => {
   for (var name in all)
@@ -15,6 +17,10 @@ var __copyProps = (to, from, except, desc) => {
   }
   return to;
 };
+var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(
+  isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
+  mod
+));
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 
 // src/index.tsx
@@ -25,11 +31,19 @@ __export(src_exports, {
 module.exports = __toCommonJS(src_exports);
 
 // src/Header/Header.tsx
+var import_image = __toESM(require("next/image"));
 var import_jsx_runtime = require("react/jsx-runtime");
-function Header({ children }) {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("header", {
-    className: "h-12 mb-4 flex items-center justify-center bg-neutral-100",
-    children
+function Header({ children, logoSrc, logoAlt }) {
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("header", {
+    className: "mb-4 flex items-center justify-start gap-4 p-4 ",
+    children: [
+      /* @__PURE__ */ (0, import_jsx_runtime.jsx)(import_image.default, {
+        src: logoSrc,
+        alt: logoAlt,
+        className: "h-8 w-auto"
+      }),
+      children
+    ]
   });
 }
 // Annotate the CommonJS export names for ESM import in node:

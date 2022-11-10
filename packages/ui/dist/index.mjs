@@ -1,9 +1,17 @@
 // src/Header/Header.tsx
-import { jsx } from "react/jsx-runtime";
-function Header({ children }) {
-  return /* @__PURE__ */ jsx("header", {
-    className: "h-12 mb-4 flex items-center justify-center bg-neutral-100",
-    children
+import Image from "next/image";
+import { jsx, jsxs } from "react/jsx-runtime";
+function Header({ children, logoSrc, logoAlt }) {
+  return /* @__PURE__ */ jsxs("header", {
+    className: "mb-4 flex items-center justify-start gap-4 p-4 ",
+    children: [
+      /* @__PURE__ */ jsx(Image, {
+        src: logoSrc,
+        alt: logoAlt,
+        className: "h-8 w-auto"
+      }),
+      children
+    ]
   });
 }
 export {

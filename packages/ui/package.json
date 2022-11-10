@@ -5,7 +5,10 @@
     ".": "./dist",
     "./styles.css": "./dist/styles.css"
   },
+  "sideEffects": false,
   "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsup src/index.tsx --format esm,cjs --dts --external react && tailwindcss -i ./src/styles.css -o ./dist/styles.css",
     "dev": "concurrently \"tsup src/index.tsx --format esm,cjs --dts --external react --watch\" \"tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch\"",
@@ -18,13 +21,16 @@
     "concurrently": "^7.5.0",
     "eslint": "^8.27.0",
     "eslint-config-custom": "workspace:*",
-    "next": "13.0.2",
     "react": "18.2.0",
     "tailwind-config": "workspace:*",
     "tailwindcss": "3.2.3",
     "tsconfig": "workspace:*",
     "tsup": "^6.4.0",
     "typescript": "4.8.4"
+  },
+  "dependencies": {
+    "react-dom": "18.2.0",
+    "next": "13.0.2"
   },
   "publishConfig": {
     "access": "public"

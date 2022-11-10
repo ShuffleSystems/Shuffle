@@ -1,18 +1,4 @@
 {
   "root": true,
-  "extends": ["custom"],
-  "overrides": [
-    {
-      "files": ["*.ts", "*.tsx"],
-
-      "extends": [
-        "plugin:@typescript-eslint/recommended",
-        "plugin:@typescript-eslint/recommended-requiring-type-checking"
-      ],
-
-      "parserOptions": {
-        "project": ["./packages/core/tsconfig.json"]
-      }
-    }
-  ]
+  "extends": ["custom"]
 }

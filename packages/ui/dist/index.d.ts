@@ -1,7 +1,7 @@
-import { ReactNode } from "react";
+import { ReactNode } from 'react';
 
 interface HeaderProps {
-  children?: ReactNode;
+    children?: ReactNode;
 }
 declare function Header({ children }: HeaderProps): JSX.Element;
 

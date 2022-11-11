@@ -14,6 +14,7 @@
     "lint": "turbo run lint"
   },
   "devDependencies": {
+    "rome": "^10.0.1",
     "turbo": "latest"
   },
   "keywords": [],

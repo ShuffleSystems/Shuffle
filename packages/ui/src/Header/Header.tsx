@@ -1,8 +1,8 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { ReactNode } from "react";
 
 export interface HeaderProps {
-	logoSrc: string;
+	logoSrc: string | StaticImageData;
 	logoAlt: string;
 	children?: ReactNode;
 }

@@ -1,7 +1,8 @@
 import "../styles/globals.css";
 import "ui/styles.css";
 import { Header } from "ui";
-import logoSrc from "../public/logo.png";
+import logo from "../public/logo.png";
+import Image from "next/image";
 
 export default function RootLayout({
 	children,
@@ -16,7 +17,8 @@ export default function RootLayout({
       */}
 			<head />
 			<body className="text-primary-700">
-				<Header logoSrc={logoSrc} logoAlt="Shuffle">
+				<Header>
+					<Image src={logo} alt="logo" className="h-8 w-auto" />
 					Shuffle
 				</Header>
 				{children}

@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "rome.rome",
+        "bradlc.vscode-tailwindcss",
+        "prisma.prisma",
+        "ms-vscode.vscode-typescript-next"
+    ]
+}

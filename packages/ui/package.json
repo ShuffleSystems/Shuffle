@@ -12,15 +12,12 @@
   "scripts": {
     "build": "tsup src/index.tsx --format esm,cjs --dts --external react && tailwindcss -i ./src/styles.css -o ./dist/styles.css",
     "dev": "concurrently \"tsup src/index.tsx --format esm,cjs --dts --external react --watch\" \"tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch\"",
-    "clean": "rm -rf dist",
-    "lint": "eslint *.ts"
+    "clean": "rm -rf dist"
   },
   "devDependencies": {
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.8",
     "concurrently": "^7.5.0",
-    "eslint": "^8.27.0",
-    "eslint-config-custom": "workspace:*",
     "react": "18.2.0",
     "tailwind-config": "workspace:*",
     "tailwindcss": "3.2.3",
